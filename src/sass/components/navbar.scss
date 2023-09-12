@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  &__logo {
+    display: flex;
+    width: 2.2rem;
+    border-radius: 1rem;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+
+    & .navbar__item:first-child {
+      margin-left: 0;
+    }
+
+    & .navbar__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin: 0 1rem;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-dark-2;
+    font-weight: bold;
+    font-size: .9rem;
+
+    transition: color .2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

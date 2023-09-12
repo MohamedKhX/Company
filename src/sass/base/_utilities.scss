@@ -1,0 +1,53 @@
+/* Container */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.active {
+  color: $color-primary !important;
+}
+
+/* Margins */
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.ml-2 {
+  margin-left: .5rem;
+}
+
+/* Widths */
+.w-25 {
+  width: 25%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Display properties */
+.d-flex {
+  display: flex !important;
+}
+
+.align_center {
+  align-items: center;
+}
+
+/* Colors */
+.black {
+  color: $color-black;
+}
+
+.gray-3 {
+  color: $color-grey-dark-3;
+}

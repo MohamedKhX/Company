@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+
+  &-rounded {
+    border-radius: 2rem;
+  }
+
+  &__primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
