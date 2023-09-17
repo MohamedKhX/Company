@@ -1,0 +1,38 @@
+.footer {
+  padding: 8rem 0;
+  background-color: $color-dark;
+  color: $paragraph-color-2;
+  clip-path: polygon(0 5%, 100% 20%, 100% 100%, 0 100%);
+
+
+  p, a {
+    color: inherit;
+  }
+
+  h2,h3,h3 {
+    color: $color-light;
+  }
+
+  &__grid {
+    margin-top: 4rem;
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    @include respond(lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__ul {
+    li {
+      list-style: none;
+      padding-bottom: .5rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

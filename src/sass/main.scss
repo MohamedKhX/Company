@@ -1,10 +1,15 @@
+@import "./abstract/mixins";
 @import "./abstract/variables";
 
 @import "./base/typography";
 @import "./base/utilities";
 @import "./base/base";
 
+@import "./layout/footer";
+
 @import "./components/navbar";
 @import "./components/button";
+@import "./components/card";
+@import "./components/social_nav";
 
 @import "./pages/home";

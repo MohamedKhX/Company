@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 
   &__logo {
     display: flex;
@@ -23,17 +23,17 @@
   }
 
   &__item {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     list-style: none;
   }
 
   &__link {
+    color: $color-dark;
     text-decoration: none;
-    color: $color-grey-dark-2;
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 1rem;
 
-    transition: color .2s;
+    transition: all .5s;
 
     &:hover {
       color: $color-primary;

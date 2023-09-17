@@ -1,0 +1,9 @@
+.social_nav {
+  display: flex;
+  gap: .7rem;
+  list-style: none;
+
+  &__link {
+    text-decoration: none;
+  }
+}

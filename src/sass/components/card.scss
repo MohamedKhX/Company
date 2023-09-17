@@ -1,0 +1,12 @@
+.card {
+  width: 100%;
+  padding: 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 .25rem 1.75rem rgba(30,34,40,.07) !important;
+  border-radius: .5rem;
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

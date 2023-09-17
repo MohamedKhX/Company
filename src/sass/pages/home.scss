@@ -1,18 +1,68 @@
 #header {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 4rem;
-  margin-top: 2rem;
+  background: linear-gradient(180deg, #fff8ee ,rgba($color-light,0) 100%);
+}
 
+.header_body {
+  margin-top: 5rem;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2rem;
 
   & div:first-child {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1 / 13;
+
+
+    @include respond(md) {
+      grid-column: 1 / 8 !important;
+    }
   }
 
   & div:last-child {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column: 1 / 13;
+    text-align: center;
+    margin-top: 2rem;
+    @include respond(md) {
+      grid-column: 8 / 13 !important;
+    }
   }
+}
+
+#services_section {
+  margin-top: 4rem;
+}
+
+#our_vision_section {
+  background: linear-gradient(180deg, #fff8ee, rgba(246, 247, 248, 0) 100%);
+  margin-top: 7rem;
+  padding: 3rem 0;
+
+  .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2rem;
+
+    & div:first-child {
+      grid-column: 1 / 13;
+
+      @include respond(md) {
+        grid-column: 1 / 6 !important;
+      }
+    }
+
+    & div:last-child {
+      grid-column: 1 / 13;
+      @include respond(md) {
+        margin-top: 10rem;
+        grid-column: 6 / 13 !important;
+      }
+    }
+  }
+}
+
+#our_team {
+  margin-top: 7rem;
 }

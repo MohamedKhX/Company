@@ -1,6 +1,14 @@
 .btn {
   display: inline-block;
   padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all .3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .25rem .75rem rgba(30,34,40,.15);
+  }
 
   &-rounded {
     border-radius: 2rem;
@@ -8,10 +16,10 @@
 
   &__primary {
     background-color: $color-primary;
-    color: $color-white;
+    color: $color-light;
 
     &:hover {
-      color: $color-white;
+      color: $color-light;
     }
   }
 }
